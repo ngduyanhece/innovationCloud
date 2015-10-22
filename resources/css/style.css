@@ -47,9 +47,10 @@ header h1 {
   padding-top: 250px;
   color: #fff;
   text-transform: uppercase;
-  font-size: 8em;
+  font-size: 5em;
   font-weight: 500;
-  letter-spacing: 0.1em;
+  letter-spacing: 10px;
+  word-spacing: 10px;
   line-height: 0.8em;
 }
 header p {
@@ -66,12 +67,22 @@ header p {
   width: 20%;
   margin: 20px auto;
 }
-.btn-header p {
+.btn-header:hover {
+  background: #117bff;
+  cursor: pointer; 
+  transition: background .5s; 
+}
+.btn-header a {
+  display: block;
   font-weight: 100;
   letter-spacing: 0;
   text-transform: capitalize;
+  text-decoration: none;
+  text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
+  color: #fff;
+  margin-bottom: 40px;
 }
 
 /*-------------------------------------------------------------------------------*/
@@ -81,14 +92,14 @@ nav {
   background-color: #151414;
 }
 nav ul {
-  margin-left: -60px;
+  margin: 0 auto;
   list-style: none;
   padding-top: 15px;
   padding-bottom: 15px;
 }
 nav li {
   display: inline-block;
-  margin-right: 35px;
+  margin-right: 25px;
 }
 nav li a {
   text-decoration: none;
@@ -109,7 +120,7 @@ nav li a {
 .promote-text {
   display: block;
   float: left;
-  width: 50%;
+  width: 70%;
   margin-left: 50px;
 }
 .promote-text h2 {
@@ -145,13 +156,22 @@ nav li a {
 .btn-join {
   background-color: #000;
   width: 100px;
-  margin-left: 91%;
-  margin-top: 10px;
+  float: right;
 }
-.btn-join p {
+.btn-join:hover {
+  background: #117bff;
+  cursor: pointer; 
+  transition: background .5s; 
+}
+.btn-join a {
   text-align: center;
+  text-decoration: none;
+  color: #fff;
+  padding-top: 10px;
   padding-bottom: 10px;
+  display: block;
 }
+
 /*-------------------------------------------------------------------------------*/
 /*FOOTER SECTION*/
 /*-------------------------------------------------------------------------------*/
@@ -163,4 +183,18 @@ footer p {
   margin-left: 30px;
   padding-top: 20px;
   padding-bottom: 30px;
+}
+/*-------------------------------------------------------------------------------*/
+/*RESPONSIVE*/
+/*-------------------------------------------------------------------------------*/
+@media (max-width: 500px) {
+  header h1 {
+    font-size: 50px;
+    line-height: 64px;
+  }
+
+
+  .main img {
+    width: 100%;
+  }
 }
